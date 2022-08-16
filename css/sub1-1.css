@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/*
+  font-family: 'EB Garamond', serif;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Noto Sans KR', sans-serif;
+*/
+
+*{margin:0;  padding:0;}
+a{text-decoration: none; color:inherit;}
+ul,ol{list-style: none;}
+body{font-size: 14px; line-height: 24px;  font-family: 'Noto Sans KR', sans-serif; color:#000;}
+.clearfix::after{content: ""; display: block; clear:both;}
+
+
+/* header */
+#header{position: fixed; top:0; left:0; width:100%; background-color:#fff;  position: fixed;;  z-index: 10;}
+#header_inner{width:1320px;  margin:0 auto;}
+.login li{display: inline-block;  padding-left:15px; color:#ccc;}
+.login{text-align: right; padding:15px 0;}
+.login li:hover img{transform:scale(1.2,1.2);}
+.logo{position: absolute; top:20px; left:50%; transform:translateX(-50%);}
+#gnb> li{float:left; font-size:20px; font-weight: bold; width:16.6%; text-align: center; padding:50px 0 20px;}
+#gnb{clear:both;}
+#gnb li:hover{color:royalblue; font-weight: bold;} 
+.solid{width:50%;
+  margin:auto;
+  margin-top:20px;
+  height:5px;
+  background:turquoise;
+  visibility:hidden;
+  opacity:0;
+  transform:scaleX(0);
+  transition-property:opacity, transform;
+  transition-duration:0.5s;}
+#gnb>li>a:hover .solid{transform:scaleX(1); opacity:1; visibility:visible;}		
+
+/* sub */
+.sub{position:absolute; left:0; top:100%; width:100%; z-index: 10;}
+  .sub li a{display: block; background-color:rgba(210, 241, 250, 0.7); font-size:14px; font-weight: normal; padding:15px 0;
+    color:rgb(18, 21, 66);}
+  .sub li a:hover{background-color:rgba(55, 255, 255, 0.9); color:rgb(4, 20, 114); transition:color, background 0.5s; font-weight: 750;}
+  #gnb>li{position:relative;}
+  
+/* submenu */
+  .sub{opacity:0; transform:scaleY(0); transform-origin: top;}
+  #gnb>li:hover>.sub{opacity: 1; transform:scaleY(1); transition:all 0.5s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*container*/
+#container{width:1320px; margin:0 auto; margin-top:200px;}
+#runner img{width:100%; height: 100%;}
+.eagle{width:80%;}
+.company{width:100%;}
+
+
+
+/*info*/
+#info{width:1320px;  margin:50px auto; padding-top:150px;}
+.left{float: left;}
+.right{float:right;}
+.img{width:600px;}
+.text{width:600px;   box-sizing:border-box;}
+.text h1{line-height:35px;  padding:20px 0; }
+.text p{font-size:20px; line-height: 50px;}
+
+.btn img{vertical-align: middle;}
+.btn{ padding:70px 0; text-align: right;  color:salmon;  font-weight: bold;}
+.btn a:hover img{  transform:translateX(13px);   transition:all 0.2s;}
+.btn a{font-size: 30px; }
+.btn span{border-bottom: 1px solid rgb(212, 25, 0);}
+.box{padding-bottom:50px;}
+
+
+
+
+
+/*keyword*/
+#keyword{background-image: url(../images/sub1-1/keyword2.jpg); background-repeat: no-repeat; height:1114px; background-position: center;}
+#keyword_inner{width:1320px; margin:0px auto; position: relative; padding-top:100px;}
+#keyword h1{position:absolute; width:261px; height: 260px;}
+
+.k1{background-image: url(../images/sub1-1/keyword_1.png); top:405px; right:0px;}
+.k2{background-image: url(../images/sub1-1/keyword_2.png); top:600px; left:0px;}
+.k3{background-image: url(../images/sub1-1/keyword_3.png); top:560px; left:280px;}
+.k4{background-image: url(../images/sub1-1/keyword_4.png); top:620px; left:560px; }
+.k5{background-image: url(../images/sub1-1/keyword_5.png); top:450px; left:785px; }
+
+.k1:hover{background-image: url(../images/sub1-1/keyword_1_h.png); top:395px; right:-10px;  transition: all 0.5s;}
+.k2:hover{background-image: url(../images/sub1-1/keyword_2_h.png); top:590px;  left:10px; transition: all 0.5s;}
+.k3:hover{background-image: url(../images/sub1-1/keyword_3_h.png);  top:550px; left:290px; transition: all 0.5s;}
+.k4:hover{background-image: url(../images/sub1-1/keyword_4_h.png); top:610px; left:570px;  transition: all 0.5s;}
+.k5:hover{background-image: url(../images/sub1-1/keyword_5_h.png);  top:440px; left:795px; transition: all 0.5s;}
+
+
+
+
+/*search*/
+.news{font-size:20px; font-weight: 300px; text-align: center;margin-top:150px;}
+#search{background-position: center; background-image: url(../images/sub1-1/cloud.jpg); background-repeat: no-repeat; max-width:1920px;  margin:30px auto; box-sizing: border-box;}
+#search_inner{vertical-align: middle;}
+#search p{padding:50px; text-align: center; font-weight: bold;}
+
+
+
+/*story*/
+#story{ margin:50px auto; margin-top: 150px; margin-bottom:150px; box-sizing:border-box;}
+#story_inner{border:0px solid #ccc; text-align: center; background-color: rgba(205, 223, 255, 0.3); width:1320px; margin:0 auto;  padding-top: 30px; padding-bottom: 30px;}
+#story_inner h1{line-height:35px;  padding:20px 0;}
+#story_inner p{line-height:40px; font-size: 20px;}
+
+
+
+
+/*picture*/
+#picture{width:1320px;  margin:0px auto;}
+#picture h1{line-height:35px;  padding:30px 0;}
+.menu_box{display: flex; justify-content: space-evenly;  flex-wrap: wrap;}
+.menu_box li{position: relative;  width:45%;   margin-right:2.5%;  margin-left:2.5%; margin-bottom:25px;  overflow: hidden;}
+.menu_box li img{width:100%; border-radius:30px; display: block;}
+.h_box{position: absolute; top:0; left:0;  background:rgba(0,0,0,0.5);
+        width:100%; height:100%;  text-align: center; opacity: 0; transition:all 0.5s; color:#fff;}
+.h_box p{font-size: 18px; padding:120px 120px;}
+.menu_box li:hover{opacity:1;}
+.h_box:hover{transform:scale(0.9, 0.9); opacity:1; border-radius: 30px;}
+
+
+
+
+#next{padding-top:30px; padding-bottom:100px; text-align:center;}
+#next a{border:10px solid gainsboro; display:inline-block;}
+#next a:hover{border:10px solid gray;  transition:all 0.5s; box-shadow:0 5px 40px rgba(0,0,0,0.5);}
+
+
+
+/* footer */
+#footer{background-color:#333; color:#999;}
+#footer_inner{width:1320px; margin:0 auto; padding:50px 0;}
+#f_img{float:left; padding-left:20px; padding-bottom:20px; padding-top:30px;}
+
+
+#f_text{float:left;
+  display: inline-block;
+  padding-left:150px;
+  padding-right:20px;
+  color:#ccc;
+  font-weight: bold;
+}
+#f_text ul li{float:left; padding-right:30px;}
+#f_text p{padding-top:30px;}
+
+.sns li{display: inline-block; opacity: 0.5; padding:0 2px;}
+.sns li:hover{opacity: 1; transition:all 0.5s;}
+.sns li:hover img{transform:scale(1.2,1.2);}
+.sns{float:right; }
+
+

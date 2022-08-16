@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+/*
+  font-family: 'EB Garamond', serif;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Noto Sans KR', sans-serif;
+*/
+
+
+html{cursor: url(cursor.png), auto}
+
+
+
+*{margin:0;  padding:0;}
+a{text-decoration: none; color:inherit;}
+ul,ol{list-style: none;}
+body{font-size: 14px; min-width:1320px; line-height: 24px;  font-family: 'Noto Sans KR', sans-serif; color:#000;}
+.clearfix::after{content: ""; display: block; clear:both;}
+
+/* header */
+#header{position: fixed; top:0; left:0; width:100%; background-color:#fff;
+  position: fixed;;  z-index: 10;}
+#header_inner{width:1320px;  margin:0 auto;}
+.login li{display: inline-block;  padding-left:15px; color:#ccc; }
+.login{text-align: right; padding:15px 0;}
+.login li:hover img{transform:scale(1.2,1.2);}
+.logo{position: absolute; top:20px; left:50%; transform:translateX(-50%);}
+#gnb> li{float:left; font-size:20px; font-weight: bold; width:16.6%; text-align: center; padding:50px 0 20px;}
+#gnb{clear:both; }
+#gnb li:hover{ color:royalblue; font-weight: bold;} 
+.solid{width:50%;
+  margin:auto;
+  margin-top:20px;
+  height:5px;
+  background:turquoise;
+  visibility:hidden;
+  opacity:0;
+  transform:scaleX(0);
+  transition-property:opacity, transform;
+  transition-duration:0.5s;}
+#gnb>li>a:hover .solid{transform:scaleX(1);
+          opacity:1;
+          visibility:visible;}		
+
+
+/* sub */
+.sub{position:absolute; left:0; top:100%; width:100%; z-index: 10;}
+  .sub li a{display: block; background-color:rgba(210, 241, 250, 0.7); font-size:14px; font-weight: normal; padding:15px 0;
+    color:rgb(18, 21, 66);}
+  .sub li a:hover{background-color:rgba(55, 255, 255, 0.9); color:rgb(4, 20, 114); transition:color, background 0.5s; font-weight: 750;}
+  #gnb>li{position:relative;}
+  
+  /* submenu */
+  .sub{opacity:0; transform:scaleY(0); transform-origin: top;}
+  #gnb>li:hover>.sub{opacity: 1; transform:scaleY(1); transition:all 0.5s;}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* download */
+#download{margin:50px auto; width:1320px; margin-top:200px; position: relative;}
+#download p{padding: 20px 0;}
+
+
+/* dl */
+#dl{margin:50px auto; width:1320px; }
+#dl ul li{float: left; box-sizing: border-box;}
+#dl ul li:nth-child(1){padding-right:10px;}
+
+
+
+
+/* ar */
+#ar{margin:50px auto; width:1320px; position: relative; }
+#ar p{padding: 20px 0;}
+#ar ul li{float: left; box-sizing: border-box;}
+
+
+
+
+
+@keyframes leftAndRight {
+
+  0% {
+    transform:translate(0,0);  
+  }
+
+ 50% {
+    transform:translate(10%,0);  
+  }
+
+
+}
+[출처] css animation, keyframes , css 애니메이션 무한 반복|작성자 와이즈사람
+
+.left_right {position: absolute;}
+.left_right img{animation: leftAndRight 1s linear infinite alternate;}
+
+
+
+
+
+/* family */
+#family{margin:50px auto; width:1320px; position: relative;}
+#family p{padding: 20px 0;}
+#family h2{padding-bottom: 30px;}
+
+
+.button{position: absolute; right:10px; top:10px;}
+
+
+
+
+
+
+
+
+  #next{padding-top:30px; padding-bottom:100px; text-align:center;}
+  #next a{border:10px solid gainsboro; display:inline-block;}
+  #next a:hover{border:10px solid gray;  transition:all 0.5s; box-shadow:0 5px 40px rgba(0,0,0,0.5);}
+  
+  
+
+
+
+/* footer */
+#footer{background-color:#333; color:#999;}
+#footer_inner{width:1320px; margin:0 auto; padding:50px 0;}
+#f_img{float:left; padding-left:20px; padding-bottom:20px; padding-top:30px;}
+
+
+#f_text{float:left;
+  display: inline-block;
+  padding-left:150px;
+  padding-right:20px;
+  color:#ccc;
+  font-weight: bold;
+}
+#f_text ul li{float:left; padding-right:30px;}
+#f_text p{padding-top:30px;}
+
+.sns li{display: inline-block; opacity: 0.5; padding:0 2px;}
+.sns li:hover{opacity: 1; transition:all 0.5s;}
+.sns li:hover img{transform:scale(1.2,1.2);}
+.sns{float:right; }
+
+

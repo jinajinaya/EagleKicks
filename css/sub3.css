@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+/*
+  font-family: 'EB Garamond', serif;
+  font-family: 'Nanum Myeongjo', serif;
+  font-family: 'Noto Sans KR', sans-serif;
+*/
+
+
+html{cursor: url(cursor.png), auto}
+
+
+*{margin:0;  padding:0;}
+a{text-decoration: none; color:inherit;}
+ul,ol{list-style: none;}
+body{font-size: 14px; min-width:1320px; line-height: 24px;  font-family: 'Noto Sans KR', sans-serif; color:#000;}
+.clearfix::after{content: ""; display: block; clear:both;}
+
+/* header */
+#header{position: fixed; top:0; left:0; width:100%; background-color:#fff;
+  position: fixed;;  z-index: 10;}
+#header_inner{width:1320px;  margin:0 auto;}
+.login li{display: inline-block;  padding-left:15px; color:#ccc; }
+.login{text-align: right; padding:15px 0;}
+.login li:hover img{transform:scale(1.2,1.2);}
+.logo{position: absolute; top:20px; left:50%; transform:translateX(-50%);}
+#gnb> li{float:left; font-size:20px; font-weight: bold; width:16.6%; text-align: center; padding:50px 0 20px;}
+#gnb{clear:both; }
+#gnb li:hover{ color:royalblue; font-weight: bold;} 
+.solid{width:50%;
+  margin:auto;
+  margin-top:20px;
+  height:5px;
+  background:turquoise;
+  visibility:hidden;
+  opacity:0;
+  transform:scaleX(0);
+  transition-property:opacity, transform;
+  transition-duration:0.5s;}
+#gnb>li>a:hover .solid{transform:scaleX(1);
+          opacity:1;
+          visibility:visible;}		
+
+
+/* sub */
+.sub{position:absolute; left:0; top:100%; width:100%; z-index: 10;}
+  .sub li a{display: block; background-color:rgba(210, 241, 250, 0.7); font-size:14px; font-weight: normal; padding:15px 0;
+    color:rgb(18, 21, 66);}
+  .sub li a:hover{background-color:rgba(55, 255, 255, 0.9); color:rgb(4, 20, 114); transition:color, background 0.5s; font-weight: 750;}
+  #gnb>li{position:relative;}
+  
+  /* submenu */
+  .sub{opacity:0; transform:scaleY(0); transform-origin: top;}
+  #gnb>li:hover>.sub{opacity: 1; transform:scaleY(1); transition:all 0.5s;}
+
+
+
+
+
+
+
+
+
+
+
+
+.red{color:red; border-bottom: 1px solid red;}
+.fonts{font-weight: 300;}
+
+
+/* make */
+#make{ background-image: url(../images/sub3/background_book.jpg); background-repeat: no-repeat; background-position: center; 
+  margin:0 auto;  max-width:1350px; height: 532px; margin-top:200px; padding-bottom: 10px;}
+#make p{padding:20px 0; font-size: 18px; line-height: 30px;}
+
+
+/* banner */
+#banner{ margin:0 auto; width:1320px; margin-bottom: 100px;}
+
+
+/* detail */
+#detail{margin:0 auto; width:1320px; }
+#detail_inner li{float: left; }
+#d_img{width:600px; }
+#d_text{width:600px; }
+.left{float:left;}
+.right{float:right;}
+
+
+/* slider */
+.slide{width:100%;
+  overflow:hidden; margin:50px auto; padding-top:150px; padding-bottom: 100px;}
+.slide_inner{
+  width:300%;
+  animation: rotate 50s linear infinite;
+}
+.slide_inner img{float:left;
+  width:100%;}
+  @keyframes rotate {
+      0%{margin-left:0;}
+      100%{margin-left:-100%;}
+  }
+
+
+
+
+
+
+/* 신발탭키 */
+/*container*/
+#container{ margin:100px auto; width:1320px;}
+#container h1{padding-bottom:30px;}
+#container p{font-size:20px; padding-bottom:80px;} 
+.look{color:red;}
+#wrapper{text-align: center; }
+
+.tabs {float:right; width:50%;}
+.tab_container{float:left; width:50%;}
+
+.tabs li{display: inline-block; 
+  padding:15px 0px; width:20%; }
+
+
+
+  .tab_container{
+  float:left;
+  text-align:center;
+  padding:15px 0;
+  padding-right:22.66px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+
+.tab_content{width:600px; height:400px; overflow: hidden; margin-bottom:100px; }
+
+.tab_content:nth-child(1){border:10px solid rgb(255, 0, 0); border-radius: 20px 20px 20px 20px;}
+.tab_content:nth-child(2){border:10px solid rgb(255, 115, 0);  border-radius: 20px 20px 20px 20px;}
+.tab_content:nth-child(3){border:10px solid rgb(251, 255, 0);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(4){border:10px solid rgb(0, 139, 12);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(5){border:10px solid rgb(0, 255, 21);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(6){border:10px solid rgb(0, 38, 255);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(7){border:10px solid rgb(0, 217, 255);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(8){border:10px solid rgb(122, 61, 3);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(9){border:10px solid rgb(255, 239, 221);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(10){border:10px solid rgb(255, 197, 236);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(11){border:10px solid rgb(183, 0, 255);  border-radius:20px  20px 20px 20px;}
+.tab_content:nth-child(12){border:10px solid rgb(0, 0, 0);  border-radius:20px  20px 20px 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* buying */
+#buying{ margin:50px auto; width:1320px; height:893px; background-image: url(../images/sub3/bgkicks.jpg); background-repeat: no-repeat; background-position: center; box-sizing: border-box; 
+        padding-top: 150px; font-weight: bold;}
+#buying_inner{background-color: rgba(200, 200, 200, 0.3); width:850px; height: 630px; margin:0px auto; }
+#buying_inner h1{padding-top:35px; text-align: center;}
+#enter{text-align: left; margin-left:30px; padding:50px;}
+
+
+/* after */
+#after{ margin:0 auto; width:1320px;}
+#after h1{padding-bottom:20px;}
+
+
+
+  #next{padding-top:30px; padding-bottom:100px; text-align:center;}
+  #next a{border:10px solid gainsboro; display:inline-block;}
+  #next a:hover{border:10px solid gray;  transition:all 0.5s; box-shadow:0 5px 40px rgba(0,0,0,0.5);}
+  
+  
+
+
+/* footer */
+#footer{background-color:#333; color:#999;}
+#footer_inner{width:1320px; margin:0 auto; padding:50px 0;}
+#f_img{float:left; padding-left:20px; padding-bottom:20px; padding-top:30px;}
+
+
+#f_text{float:left;
+  display: inline-block;
+  padding-left:150px;
+  padding-right:20px;
+  color:#ccc;
+  font-weight: bold;
+}
+#f_text ul li{float:left; padding-right:30px;}
+#f_text p{padding-top:30px;}
+
+.sns li{display: inline-block; opacity: 0.5; padding:0 2px;}
+.sns li:hover{opacity: 1; transition:all 0.5s;}
+.sns li:hover img{transform:scale(1.2,1.2);}
+.sns{float:right; }
+
+
