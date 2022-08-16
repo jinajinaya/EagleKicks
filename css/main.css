@@ -74,7 +74,7 @@ body{font-size: 14px; line-height: 24px;  font-family: 'Noto Sans KR', sans-seri
     transform: rotate(360deg);
   }
 }
-#ani{position: absolute; width:20%; left:90px;}
+#ani{position: absolute; width:20%; left:90px; top:10px;}
 #ani img{animation: rotate 7s linear infinite;}
 
 #best{width:1320px; margin:0 auto;}
